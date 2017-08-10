@@ -1,0 +1,61 @@
+# Makefile Config File
+
+# Style information
+DEFAULT=$(NO_COLOR)
+SUCCESS=$(BOLDGREEN)
+WARNING=$(BOLDCYAN)
+IMPORTANT=$(BOLD)
+NOTE=$(ITALIC)
+LABEL=$(UNDERLINE)
+
+## Style information - colors
+NO_COLOR=\033[0m
+BOLD=\033[1m
+ITALIC=\033[3m
+UNDERLINE=\033[4m
+GREEN=\033[0;92m
+BOLDGREEN=\033[1;92m
+RED=\033[0;31m
+BOLDRED=\033[1;31m
+CYAN=\033[0;36m
+BOLDCYAN=\033[1;36m
+
+# Database information
+DB_NAME=$(shell echo "br_local_${THEME_NAME}" | sed 's/ /_/g' | sed 's/-/_/g' | tr A-Z a-z)
+DB_USER=root
+DB_PASS=root
+DB_HOST=localhost
+
+# Remote Server information
+RM_USER=
+RM_PASS=
+RM_HOST=
+RM_DIR=
+
+# WordPress information
+WP_USER=
+WP_PASS=
+WP_EMAIL=
+WP_TITLE=Brainrider Workflow
+WP_DESCRIPTION=A Brainrider workflow project.
+
+# Theme Information
+THEME_NAME=$(shell echo $(notdir $(CURDIR)) | sed 's/ /-/g' | sed 's/_/-/g' | tr A-Z a-z)
+THEME_URI=http://brainrider.com
+THEME_DESC= A Custom B2B theme for $(THEME_NAME).
+THEME_AUTHOR=Nathan M. House
+THEME_AUTHOR_URI=http://brainrider.com
+
+# Repository Information
+REPO_USER=
+REPO_TEAM=
+REPO_PASS=
+REPO_PROJECT_KEY=
+REPO_URL=https://$(REPO_USER)@bitbucket.org/$(REPO_TEAM)/$(THEME_NAME).git
+
+# ACF Information
+ACF_KEY=
+
+# Debug Information
+AT=@
+#VERBOSE=-v
