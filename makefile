@@ -101,7 +101,7 @@ theme-config:
 	$(AT)mkdir -p wp-content/themes
 
 # Download Brainrider Boilerplate theme
-	$(AT)git clone https://https://gocactus@bitbucket.org/gocactus-inc/brainrider-boilerplate.git \
+	$(AT)git clone https://gocactus@bitbucket.org/gocactus-inc/brainrider-boilerplate.git \
 	wp-content/themes/$(THEME_NAME) $(VERBOSE)
 
 # Remove Brainrider Boilerplate theme git files
