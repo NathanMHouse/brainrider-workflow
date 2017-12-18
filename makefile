@@ -177,7 +177,7 @@ plugins-config:
 	googleanalytics query-monitor regenerate-thumbnails relevanssi \
 	simple-301-redirects svg-support taxonomy-terms-order theme-check \
 	wordpress-seo wp-all-import wp-optimize yet-another-related-posts-plugin \
-	yoast-seo-acf-analysis --activate
+	acf-content-analysis-for-yoast-seo --activate
 	@echo
 
 # Update all plugins
