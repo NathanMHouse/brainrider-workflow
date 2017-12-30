@@ -137,11 +137,11 @@ plugins-config:
 	"Installing premium plugins..."
 
 # Install iThemes Security Pro
-	@echo "Installing iThemes Security Pro..."
-	$(AT)cp ./ithemes-security-pro.zip ./wp-content/plugins/
-	$(AT)wp plugin install ./wp-content/plugins/ithemes-security-pro.zip \
+	@echo "Installing iThemes Security Pro...(Disabled)"
+	#$(AT)cp ./ithemes-security-pro.zip ./wp-content/plugins/
+	#$(AT)wp plugin install ./wp-content/plugins/ithemes-security-pro.zip \
 	--activate
-	$(AT)rm -rf ./wp-content/plugins/ithemes-security-pro.zip
+	#$(AT)rm -rf ./wp-content/plugins/ithemes-security-pro.zip
 
 # Install ACF Pro
 	@echo "Installing ACF Pro..."
