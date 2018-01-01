@@ -21,7 +21,7 @@ CYAN=\033[0;36m
 BOLDCYAN=\033[1;36m
 
 # Database information
-DB_NAME=$(shell echo "br_local_${THEME_NAME}" | sed 's/ /_/g' | sed 's/-/_/g' | tr A-Z a-z)
+DB_NAME=$(shell echo "local_${THEME_NAME}" | sed 's/ /_/g' | sed 's/-/_/g' | tr A-Z a-z)
 DB_USER=root
 DB_PASS=root
 DB_HOST=localhost
@@ -36,15 +36,15 @@ RM_DIR=
 WP_USER=
 WP_PASS=
 WP_EMAIL=
-WP_TITLE=Brainrider Workflow
-WP_DESCRIPTION=A Brainrider workflow project.
+WP_TITLE=Custom Workflow
+WP_DESCRIPTION=A workflow project.
 
 # Theme Information
 THEME_NAME=$(shell echo $(notdir $(CURDIR)) | sed 's/ /-/g' | sed 's/_/-/g' | tr A-Z a-z)
-THEME_URI=http://brainrider.com
-THEME_DESC= A Custom B2B theme for $(THEME_NAME).
-THEME_AUTHOR=Nathan M. House
-THEME_AUTHOR_URI=http://brainrider.com
+THEME_URI=http://theme-url.com
+THEME_DESC= A Custom theme for $(THEME_NAME).
+THEME_AUTHOR=Your Name
+THEME_AUTHOR_URI=http://your-url.com
 
 # Repository Information
 REPO_USER=
